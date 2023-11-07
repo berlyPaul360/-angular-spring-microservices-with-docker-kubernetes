@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'https://cdnjs.cloudfare.com/ajax/libs/font-awesome/5.11.2/css/all.css';
+@import 'https://use.fontawesome.com/releases/v5.8.2/css/all.css';
+
 html, body { height: 100%; }
 body {
   margin: 0;
@@ -10,3 +11,8 @@ body {
   text-align:left;
   background-color: #1e1e2f;
 }
+
+mat-sidenav-container {
+  height: 100vh; /* 100% of the viewport height */
+}
+
