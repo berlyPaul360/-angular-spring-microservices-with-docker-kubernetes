@@ -9,11 +9,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSidenavModule} from "@angular/material/sidenav";
 import { SideNavComponent } from './side-nav/side-nav.component';
 import {NgOptimizedImage} from "@angular/common";
+import { LoginComponent } from './login/login.component';
+import { RegistrationComponent } from './registration/registration.component';
+import {MatInputModule} from "@angular/material/input";
+import {MatFormFieldModule} from "@angular/material/form-field";
 
 @NgModule({
   declarations: [
     AppComponent,
-    SideNavComponent
+    SideNavComponent,
+    LoginComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +29,9 @@ import {NgOptimizedImage} from "@angular/common";
     BrowserAnimationsModule,
     MatSidenavModule,
     RouterLink,
-    NgOptimizedImage
+    NgOptimizedImage,
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers: [
 

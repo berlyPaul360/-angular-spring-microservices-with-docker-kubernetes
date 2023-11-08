@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import employee, {Employee} from "./employee";
 import {HttpClient, HttpErrorResponse} from "@angular/common/http";
 import {EmployeeService} from "./employee.service";
-import {error} from "@angular/compiler-cli/src/transformers/util";
+
 
 @Component({
   selector: 'app-root',

@@ -99,3 +99,8 @@
   background:#fff;
   border-radius:50%;
 }
+ul.nav {
+  list-style-type: none; /* Removes the default list styling */
+  padding: 0; /* Removes the default padding */
+  margin: 0; /* Removes the default margin */
+}
