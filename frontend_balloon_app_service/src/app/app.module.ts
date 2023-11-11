@@ -7,19 +7,25 @@ import { AppRoutingModule } from './app-routing.module';
 import {RouterLink, RouterOutlet} from "@angular/router";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSidenavModule} from "@angular/material/sidenav";
-import { SideNavComponent } from './side-nav/side-nav.component';
+import { Menu } from './menu/menu';
 import {NgOptimizedImage} from "@angular/common";
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 import {MatInputModule} from "@angular/material/input";
 import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatIconModule} from "@angular/material/icon";
+import { HomeComponent } from './home/home.component';
+import {MatCardModule} from "@angular/material/card";
+import {CdkDropList} from "@angular/cdk/drag-drop";
 
 @NgModule({
   declarations: [
     AppComponent,
-    SideNavComponent,
+    Menu,
     LoginComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +37,11 @@ import {MatFormFieldModule} from "@angular/material/form-field";
     RouterLink,
     NgOptimizedImage,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatCardModule,
+    CdkDropList
   ],
   providers: [
 

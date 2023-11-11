@@ -1,16 +1,18 @@
-<div *ngIf="employees">
-  <div><strong>Employee First Name:</strong> {{ employees.firstName }}</div>
+<!--<div *ngIf="employees">-->
+<!--  <div><strong>Employee First Name:</strong> {{ employees.firstName }}</div>-->
+<!--</div>-->
+
+
+
+
+
+<app-menu-nav></app-menu-nav>
+
+<div style="text-align: center;">
+    <router-outlet></router-outlet>
 </div>
 
+    
 
 
-<mat-sidenav-container>
-  <mat-sidenav #sideNav mode="side" opened>
-    <app-side-nav></app-side-nav>
-  </mat-sidenav>
 
-  <mat-sidenav-content>
-    <router-outlet></router-outlet>
-  </mat-sidenav-content>
-
-</mat-sidenav-container>
