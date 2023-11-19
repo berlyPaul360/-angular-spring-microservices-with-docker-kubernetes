@@ -12,8 +12,10 @@ import org.springframework.web.bind.annotation.*;
 @AllArgsConstructor
 public class OrganizationController {
 
-    private OrganizationService organizationService;
 
+    private OrganizationService organizationService;
+    //already initialized in constructor through AllArgsConstructor
+    //public class OrganizationController(OrganizationService organizationService){this.organizationService = organizationService;
     //Build save Organization REST API
 
     @PostMapping

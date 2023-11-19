@@ -18,6 +18,9 @@ import {MatIconModule} from "@angular/material/icon";
 import { HomeComponent } from './home/home.component';
 import {MatCardModule} from "@angular/material/card";
 import {CdkDropList} from "@angular/cdk/drag-drop";
+import {MatGridListModule} from "@angular/material/grid-list";
+import {MatButtonModule} from "@angular/material/button";
+import {MatMenuModule} from "@angular/material/menu";
 
 @NgModule({
   declarations: [
@@ -41,7 +44,10 @@ import {CdkDropList} from "@angular/cdk/drag-drop";
     MatToolbarModule,
     MatIconModule,
     MatCardModule,
-    CdkDropList
+    CdkDropList,
+    MatGridListModule,
+    MatButtonModule,
+    MatMenuModule
   ],
   providers: [
 

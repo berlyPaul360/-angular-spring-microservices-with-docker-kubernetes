@@ -31,12 +31,15 @@
   </ul>
 </div> -->
 <mat-toolbar class="gradient-toolbar mat-elevation-z6">
-  <button mat-icon-button>
-    <mat-icon>menu</mat-icon>
-  </button>
+  <button mat-icon-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+  <mat-menu #menu="matMenu">
+    <button routerLink="/login" mat-menu-item>Login</button>
+    <button mat-menu-item>Profile</button>
+    <button mat-menu-item>Orders</button>
+  </mat-menu>
   <span>BAL DECOR</span>
   <span class="example-spacer"></span>
-  <button>HOME</button>
-  <button>About</button>
-  <button>Contact</button>
+  <button routerLink="" mat-button>HOME</button>
+  <button routerLink="" mat-button>About</button>
+  <button routerLink="" mat-button>Contact</button>
 </mat-toolbar>

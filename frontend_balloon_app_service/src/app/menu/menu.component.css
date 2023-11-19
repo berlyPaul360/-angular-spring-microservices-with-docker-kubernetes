@@ -104,6 +104,11 @@
 /*  padding: 0; !* Removes the default padding *!*/
 /*  margin: 0; !* Removes the default margin *!*/
 /*}*/
+/* header.component.css */
+:host {
+  display: block;
+  margin-bottom: 20px; /* Adjust the value as needed */
+}
 
 
 .gradient-toolbar {
