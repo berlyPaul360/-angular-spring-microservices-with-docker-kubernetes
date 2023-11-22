@@ -64,5 +64,6 @@ public class ProductServiceImpl implements ProductService {
 
          productEntity.setQuantity(productEntity.getQuantity() - quantity);
          productRepository.save(productEntity);
+         log.info("Product Quantity updated Successfully");
     }
 }
