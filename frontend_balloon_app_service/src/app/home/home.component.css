@@ -1,0 +1,42 @@
+/*.carousel-container {*/
+/*    overflow: hidden;*/
+/*    white-space: nowrap;*/
+/*  }*/
+/*  */
+/*  .carousel-item {*/
+/*    display: inline-block;*/
+/*    padding: 15px;*/
+/*    min-width: 300px; !* Adjust as needed *!*/
+/*  }*/
+/*  */
+/*  .carousel-list {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*  }*/
+/*  */
+/*  !* Additional styling for Angular Material Card *!*/
+/*  mat-card {*/
+/*    width: 100%;*/
+/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+/*  }*/
+
+.grid-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* This makes the image cover the tile area */
+}
+
+.elevated-grid {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent overlay */
+  padding: 10px;
+}
+
+.grid-item {
+  position: relative; /* Needed for absolute positioning of the caption */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+}
+

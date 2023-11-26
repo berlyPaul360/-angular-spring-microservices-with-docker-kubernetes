@@ -1,0 +1,31 @@
+<!--
+<div class="carousel-container">
+    <div cdkDropList class="carousel-list" (cdkDropListDropped)="drop($event)">
+      <div class="carousel-item" *ngFor="let item of items" cdkDrag>
+        <mat-card>
+
+          <img mat-card-image [src]="item.image" alt="{{item.title}}">
+
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+
+-->
+<mat-grid-list cols="3" rowHeight="300px">
+  <mat-grid-tile [colspan]="2" [rowspan]="2" class="grid-item" (click)="navigate('component-one')">
+    <img [src]="imageUrl1" class="grid-image">
+    <div class="elevated-grid">BALLOON DECORS START HERE</div>
+  </mat-grid-tile>
+  <mat-grid-tile class="grid-item" (click)="navigate('component-two')">
+    <img [src]="imageUrl2" class="grid-image">
+    <div class="elevated-grid">BABY BOXES ORDER HERE</div>
+  </mat-grid-tile>
+  <mat-grid-tile class="grid-item" (click)="navigate('component-three')">
+    <!-- If you have an image URL for the third image, use it here -->
+    <img [src]="imageUrl3" class="grid-image">
+    <div class="elevated-grid">Order Custom Apparel Now</div>
+  </mat-grid-tile>
+</mat-grid-list>
+
