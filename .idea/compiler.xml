@@ -15,11 +15,11 @@
         <module name="organization-service" />
         <module name="OrderService" />
         <module name="service-registry" />
+        <module name="employee-service (1)" />
         <module name="employee-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="employee-service (1)" target="17" />
       <module name="employee-service (2)" target="17" />
     </bytecodeTargetLevel>
   </component>

@@ -21,6 +21,7 @@ import {CdkDropList} from "@angular/cdk/drag-drop";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatButtonModule} from "@angular/material/button";
 import {MatMenuModule} from "@angular/material/menu";
+import { LoginStatusComponent } from './login-status/login-status/login-status.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {MatMenuModule} from "@angular/material/menu";
     Menu,
     LoginComponent,
     RegistrationComponent,
-    HomeComponent
+    HomeComponent,
+    LoginStatusComponent
   ],
   imports: [
     BrowserModule,

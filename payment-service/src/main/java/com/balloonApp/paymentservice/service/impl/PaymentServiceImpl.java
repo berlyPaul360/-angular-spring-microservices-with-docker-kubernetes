@@ -1,6 +1,8 @@
 package com.balloonApp.paymentservice.service.impl;
 
+import com.balloonApp.paymentservice.dto.PaymentMode;
 import com.balloonApp.paymentservice.dto.PaymentRequestDto;
+import com.balloonApp.paymentservice.dto.PaymentResponse;
 import com.balloonApp.paymentservice.entity.TransactionDetailsEntity;
 import com.balloonApp.paymentservice.repository.TransactionDetailsRepository;
 import com.balloonApp.paymentservice.service.PaymentService;
@@ -36,4 +38,25 @@ public class PaymentServiceImpl implements PaymentService {
 
         return transactEntity.getId();
     }
+
+    @Override
+    public PaymentResponse getPaymentDetailsByOrderId(String orderId) {
+        log.info("Getting payment details for the Order ID: ");
+
+        TransactionDetailsEntity transactionDetails
+                = transactRepo.findByOrderId(Long.parseLong(orderId));
+
+
+                return PaymentResponse.builder()
+                .paymentId(transactionDetails.getId())
+                .paymentMode(PaymentMode.valueOf(transactionDetails.getPaymentMode()))
+                .paymentDate(transactionDetails.getPaymentDate())
+                .orderId(transactionDetails.getOrderId())
+                .status(transactionDetails.getPaymentStatus())
+                .amount(transactionDetails.getAmount())
+                .build();
+
+    }
+
+
 }
